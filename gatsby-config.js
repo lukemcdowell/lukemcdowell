@@ -2,8 +2,18 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: `/`,
   siteMetadata: {
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Luke McDowell`,
+    description: `Personal Website`,
+    author: `@lukemcdowell`,
   },
-  plugins: [],
-}
+  plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        icon: `static/favicon.png`,
+      },
+    },
+  ],
+};
