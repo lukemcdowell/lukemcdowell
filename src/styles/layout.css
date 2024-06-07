@@ -3,8 +3,7 @@ main {
   font-family: 'Ubuntu Mono', 'Roboto', 'Courier New', monospace;
   padding: 2rem;
   margin: auto;
-  width: 60%;
-  max-width: 650px;
+  max-width: 610px;
 }
 
 #breadcrumbs {
@@ -22,32 +21,6 @@ a:hover {
 
 a:visited {
   color: inherit;
-}
-
-#about {
-  padding: 2rem 0rem;
-}
-
-.heading {
-  font-size: 3rem;
-  margin-top: 0;
-}
-
-p {
-  font-size: 1.5rem;
-}
-
-.link {
-  font-weight: bold;
-  font-size: 1.5rem;
-}
-
-.link-list {
-  list-style-type: none;
-  display: flex;
-  gap: 1rem;
-  padding: 0;
-  margin: 0;
 }
 
 ::-webkit-scrollbar-track {
@@ -77,11 +50,5 @@ p {
   100% {
     opacity: 1;
     transform: translateY(-0px);
-  }
-}
-
-@media (max-width: 650px) {
-  main {
-    width: 100%;
   }
 }
