@@ -4,7 +4,13 @@
   box-sizing: border-box;
 }
 
-html,
+html {
+  height: 100vh;
+  width: 100vw;
+  color: #494949;
+  font-family: 'Ubuntu Mono', 'Roboto', 'Courier New', monospace;
+}
+
 body {
   height: 100%;
   width: 100%;

@@ -1,12 +1,23 @@
 main {
-  color: #494949;
-  font-family: 'Ubuntu Mono', 'Roboto', 'Courier New', monospace;
-  padding: 2rem;
+  height: 90vh;
+  width: 100vw;
+}
+
+section {
   margin: auto;
   max-width: 610px;
+  padding: 0rem 2rem;
 }
 
 #breadcrumbs {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: blue;
+}
+
+.breadcrumb-link {
   display: flex;
   gap: 0.5rem;
 }
@@ -40,15 +51,4 @@ a:visited {
 
 ::-webkit-scrollbar {
   width: 12px;
-}
-
-@keyframes fade-down {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(-0px);
-  }
 }

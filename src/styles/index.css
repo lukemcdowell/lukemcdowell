@@ -1,5 +1,5 @@
 #about {
-  padding: 2rem 0rem;
+  animation: fade-up 1s;
 }
 
 .heading {
@@ -9,7 +9,7 @@
 
 .subheading {
   font-size: 1.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .link {
@@ -34,6 +34,33 @@
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+  padding-right: 40px;
+}
+
+.icon-button {
+  color: inherit;
+  transition: color 0.3s;
+}
+
+.icon-button[href="https://github.com/lukemcdowell"]:hover
+{
+  color: #333;
+}
+
+.icon-button[href="https://www.linkedin.com/in/ldbm/"]:hover
+{
+  color: #0077b5;
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-0px) scale(1);
+  }
 }
 
 @media (max-width: 650px) {

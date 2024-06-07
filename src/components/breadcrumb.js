@@ -1,25 +1,24 @@
 import React from 'react';
 
 function Breadcrumb({ breadcrumbPath }) {
-  console.log(breadcrumbPath);
   return (
-    <div id="breadcrumbs">
-      {breadcrumbPath.map((page, index) => {
-        const link = page === 'home' ? '' : page;
-        return index === breadcrumbPath.length - 1 ? (
-          <a className="breadcrumb-link" href={`/${link}`}>
-            {page}
-          </a>
-        ) : (
-          <>
-            <a key={index} className="breadcrumb-link" href={`/${link}`}>
+    <section>
+      <div id="breadcrumbs">
+        {breadcrumbPath.map((page, index) => {
+          const link = page === 'home' ? '' : page;
+          return index === breadcrumbPath.length - 1 ? (
+            <a key={index} href={`/${link}`}>
               {page}
             </a>
-            <div>{'>'}</div>
-          </>
-        );
-      })}
-    </div>
+          ) : (
+            <div key={index} className="breadcrumb-link">
+              <a href={`/${link}`}>{page}</a>
+              <div>{'>'}</div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
   );
 }
 
