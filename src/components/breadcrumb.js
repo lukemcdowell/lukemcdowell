@@ -2,7 +2,7 @@ import React from 'react';
 
 function Breadcrumb({ breadcrumbPath }) {
   return (
-    <section>
+    <section className="container">
       <div id="breadcrumbs">
         {breadcrumbPath.map((page, index) => {
           const link = page === 'home' ? '' : page;

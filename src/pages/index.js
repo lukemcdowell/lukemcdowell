@@ -8,12 +8,12 @@ import '../styles/index.css';
 const IndexPage = () => {
   return (
     <Layout breadcrumbPath={['home']}>
-      <section id="about">
+      <section id="about" className="container">
         <h1 className="heading">Luke McDowell</h1>
         <p className="subheading">
           Software Engineer currently based in Glasgow.
         </p>
-        <div id="content">
+        <div id="homepage-content">
           <div id="links">
             <ul>
               <li>

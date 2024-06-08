@@ -3,7 +3,7 @@ main {
   width: 100vw;
 }
 
-section {
+.container {
   margin: auto;
   max-width: 610px;
   padding: 0rem 2rem;
