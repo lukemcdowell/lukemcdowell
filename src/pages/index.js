@@ -17,11 +17,6 @@ const IndexPage = () => {
           <div id="links">
             <ul>
               <li>
-                <a href="/projects">
-                  <h2>projects</h2>
-                </a>
-              </li>
-              <li>
                 <a href="/gallery">
                   <h2>gallery</h2>
                 </a>
