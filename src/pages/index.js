@@ -14,8 +14,7 @@ const IndexPage = () => {
           Software Engineer currently based in Glasgow.
         </p>
         <div id="content">
-          {/* TODO: link out to projects (AK Yoga, top spotify) */}
-          <div>
+          <div id="links">
             <ul>
               <li>
                 <a href="/projects">

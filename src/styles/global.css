@@ -7,7 +7,7 @@
 html {
   height: 100vh;
   width: 100vw;
-  color: #494949;
+  color: #f3f8f2;
   font-family: 'Ubuntu Mono', 'Roboto', 'Courier New', monospace;
 }
 
@@ -17,5 +17,5 @@ body {
   padding: 0;
   margin: 0;
   overflow-x: hidden;
-  background-color: #dce0d9;
+  background-color: #393e41;
 }
