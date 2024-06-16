@@ -1,4 +1,4 @@
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faSpotify } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as React from 'react';
 import Layout from '../components/layout';
@@ -46,6 +46,15 @@ const IndexPage = () => {
               title="LinkedIn"
             >
               <FontAwesomeIcon icon={faLinkedin} size="3x" />
+            </a>
+            <a
+              href="https://open.spotify.com/user/lukemcdo"
+              target="_blank"
+              rel="noreferrer"
+              className="icon-button"
+              title="Spotify"
+            >
+              <FontAwesomeIcon icon={faSpotify} size="3x" />
             </a>
           </div>
         </div>

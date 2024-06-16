@@ -43,6 +43,11 @@
   color: #0077b5;
 }
 
+.icon-button[href="https://open.spotify.com/user/lukemcdo"]:hover
+{
+  color: 	#1db954;
+}
+
 @keyframes fade-up {
   0% {
     opacity: 0;
