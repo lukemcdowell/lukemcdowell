@@ -5,7 +5,7 @@ function Breadcrumb({ breadcrumbPath }) {
     <section className="container">
       <div id="breadcrumbs">
         {breadcrumbPath.map((page, index) => {
-          const link = page === 'home' ? '' : page;
+          const link = page === 'Home' ? '' : page;
           return index === breadcrumbPath.length - 1 ? (
             <a key={index} href={`/${link}`}>
               {page}

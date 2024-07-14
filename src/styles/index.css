@@ -28,24 +28,40 @@
   padding-right: 40px;
 }
 
+.icon-link,
 .icon-button {
   color: inherit;
   transition: color 0.3s;
 }
 
-.icon-button[href="https://github.com/lukemcdowell"]:hover
+.icon-link[href="https://github.com/lukemcdowell"]:hover
 {
   color: #333;
 }
 
-.icon-button[href="https://www.linkedin.com/in/ldbm/"]:hover
+.icon-link[href="https://www.linkedin.com/in/ldbm/"]:hover
 {
   color: #0077b5;
 }
 
-.icon-button[href="https://open.spotify.com/user/lukemcdo"]:hover
+.icon-link[href="https://open.spotify.com/user/lukemcdo"]:hover
 {
-  color: 	#1db954;
+  color: #1db954;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.icon-button:focus {
+  outline: none;
+}
+
+.icon-button:hover {
+  color: #eb4235;
 }
 
 @keyframes fade-up {
