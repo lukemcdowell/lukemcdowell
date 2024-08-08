@@ -80,4 +80,15 @@
   #icons {
     flex-direction: column;
   }
+
+  #homepage-content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #icons {
+    padding-right: 0px;
+    justify-content: center;
+    flex-direction: row;
+  }
 }

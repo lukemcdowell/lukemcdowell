@@ -47,7 +47,7 @@ const IndexPage = () => {
                 </a>
               </li>
               <li>
-                <a href="/cv.pdf" target="_blank" rel="noreferrer">
+                <a href="/cv.pdf" rel="noreferrer">
                   <h2>CV</h2>
                 </a>
               </li>
