@@ -32,62 +32,67 @@ const IndexPage = () => {
   };
 
   return (
-    <Layout breadcrumbPath={['Home']}>
-      <section id="about" className="container">
+    <Layout breadcrumbPath={['home']}>
+      <section className="container">
         <h1 className="heading">Luke McDowell</h1>
-        <p className="subheading">
-          Software Engineer currently based in Glasgow.
-        </p>
-        <div id="homepage-content">
-          <div id="links">
-            <ul>
-              <li>
-                <a href="/projects">
-                  <h2>Projects</h2>
-                </a>
-              </li>
-              <li>
-                <a href="/cv.pdf" rel="noreferrer">
-                  <h2>CV</h2>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div id="icons">
-            <a
-              href="https://github.com/lukemcdowell"
-              target="_blank"
-              rel="noreferrer"
-              className="icon-link"
-              title="GitHub"
-            >
-              <FontAwesomeIcon icon={faGithub} size="3x" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/ldbm/"
-              target="_blank"
-              rel="noreferrer"
-              className="icon-link"
-              title="LinkedIn"
-            >
-              <FontAwesomeIcon icon={faLinkedin} size="3x" />
-            </a>
-            <a
-              href="https://open.spotify.com/user/lukemcdo"
-              target="_blank"
-              rel="noreferrer"
-              className="icon-link"
-              title="Spotify"
-            >
-              <FontAwesomeIcon icon={faSpotify} size="3x" />
-            </a>
-            <button
-              onClick={copyEmailToClipboard}
-              className="icon-button"
-              title="Email"
-            >
-              <FontAwesomeIcon icon={faEnvelope} size="3x" />
-            </button>
+        <div id="about">
+          <p className="subheading">Software Engineer based in Glasgow.</p>
+          <div id="homepage-content">
+            <div id="links">
+              <ul>
+                <li>
+                  <a href="/projects">
+                    <h2>projects</h2>
+                  </a>
+                </li>
+                <li>
+                  <a href="/gallery">
+                    <h2>gallery</h2>
+                  </a>
+                </li>
+                <li>
+                  <a href="/cv.pdf" rel="noreferrer">
+                    <h2>CV</h2>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div id="icons">
+              <a
+                href="https://github.com/lukemcdowell"
+                target="_blank"
+                rel="noreferrer"
+                className="icon-link"
+                title="GitHub"
+              >
+                <FontAwesomeIcon icon={faGithub} size="3x" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/ldbm/"
+                target="_blank"
+                rel="noreferrer"
+                className="icon-link"
+                title="LinkedIn"
+              >
+                <FontAwesomeIcon icon={faLinkedin} size="3x" />
+              </a>
+              <a
+                href="https://open.spotify.com/user/lukemcdo"
+                target="_blank"
+                rel="noreferrer"
+                className="icon-link"
+                title="Spotify"
+              >
+                <FontAwesomeIcon icon={faSpotify} size="3x" />
+              </a>
+              <button
+                onClick={copyEmailToClipboard}
+                className="icon-button"
+                title="Email"
+              >
+                <FontAwesomeIcon icon={faEnvelope} size="3x" />
+              </button>
+            </div>
           </div>
         </div>
       </section>

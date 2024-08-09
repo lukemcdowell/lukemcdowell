@@ -1,0 +1,7 @@
+.gallery-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 2rem;
+  animation: fade-up 1s;
+}
