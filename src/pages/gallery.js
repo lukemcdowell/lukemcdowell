@@ -1,5 +1,7 @@
 import { getDownloadURL, listAll, ref } from 'firebase/storage';
 import * as React from 'react';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
 import { imageStore } from '../../firebase-config';
 import Layout from '../components/layout';
 import Seo from '../components/seo';
@@ -43,23 +45,28 @@ const Gallery = () => {
     <Layout breadcrumbPath={['home', 'gallery']}>
       <section className="container">
         <h1 className="heading">Gallery</h1>
-        {imageUrls.length !== 0 && (
+      </section>
+
+      {imageUrls.length !== 0 && (
+        <PhotoProvider>
           <div className="gallery-container">
             {splitIntoThree(imageUrls).map((array, index) => (
               <div key={index} className="gallery-column">
                 {array.map((url, index) => (
-                  <img
-                    key={index}
-                    src={url}
-                    alt={index}
-                    className="gallery-image"
-                  />
+                  <PhotoView key={index} src={url}>
+                    <img
+                      key={index}
+                      src={url}
+                      alt={index}
+                      className="gallery-image"
+                    />
+                  </PhotoView>
                 ))}
               </div>
             ))}
           </div>
-        )}
-      </section>
+        </PhotoProvider>
+      )}
     </Layout>
   );
 };

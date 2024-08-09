@@ -3,8 +3,10 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  margin-top: 2rem;
   animation: fade-up 1s;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .gallery-column {
@@ -20,7 +22,7 @@
 @media (max-width: 650px) {
   .gallery-container {
     gap: 0.5rem;
-    margin-top: 1rem;
+    padding: 1rem;
   }
 
   .gallery-column {
