@@ -6,7 +6,7 @@ import '../styles/projects.css';
 
 const Projects = () => {
   return (
-    <Layout breadcrumbPath={['Home', 'Projects']}>
+    <Layout breadcrumbPath={['home', 'projects']}>
       <section className="container">
         <h1 className="heading">Projects</h1>
         <div className="projects-container">
@@ -32,7 +32,7 @@ const Projects = () => {
                   rel="noreferrer"
                   className="project-link"
                 >
-                  Website
+                  website
                 </a>
                 <a
                   href="https://github.com/lukemcdowell/musaic"
@@ -40,7 +40,7 @@ const Projects = () => {
                   rel="noreferrer"
                   className="project-link"
                 >
-                  Github
+                  github
                 </a>
               </div>
             </div>
@@ -68,7 +68,7 @@ const Projects = () => {
                   rel="noreferrer"
                   className="project-link"
                 >
-                  Website
+                  website
                 </a>
               </div>
             </div>
