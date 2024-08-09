@@ -35,8 +35,9 @@ const IndexPage = () => {
     <Layout breadcrumbPath={['home']}>
       <section className="container">
         <h1 className="heading">Luke McDowell</h1>
+        <p className="subheading">Software Engineer based in Glasgow.</p>
+
         <div id="about">
-          <p className="subheading">Software Engineer based in Glasgow.</p>
           <div id="homepage-content">
             <div id="links">
               <ul>

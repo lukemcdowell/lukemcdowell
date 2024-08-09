@@ -45,6 +45,7 @@ const Gallery = () => {
     <Layout breadcrumbPath={['home', 'gallery']}>
       <section className="container">
         <h1 className="heading">Gallery</h1>
+        <p className="subheading">Collection of anything I find cool.</p>
       </section>
 
       {imageUrls.length !== 0 && (

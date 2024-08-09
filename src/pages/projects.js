@@ -9,6 +9,10 @@ const Projects = () => {
     <Layout breadcrumbPath={['home', 'projects']}>
       <section className="container">
         <h1 className="heading">Projects</h1>
+        <p className="subheading">
+          Creations I have worked on in my free time.
+        </p>
+
         <div className="projects-container">
           <div className="project-card">
             <div className="project-image">
